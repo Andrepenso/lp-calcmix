@@ -41,398 +41,492 @@
 <body class="bg-[#F2F2F2] text-gray-800">
 
   <!DOCTYPE html>
-<html lang="pt-BR">
+  <html lang="pt-BR">
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Autoconcreteira Fiori | Produza Concreto com Economia e Eficiência</title>
-  <meta name="description"
-    content="Elimine atrasos, desperdícios e custos altos na obra. Conheça a Fiori: a central de concreto sobre rodas.">
-  <script src="https://cdn.tailwindcss.com"></script>
-  <style>
-    html {
-      scroll-behavior: smooth;
-    }
-
-    .pulsante {
-      animation: pulse 1.8s infinite;
-    }
-
-    @keyframes pulse {
-      0% {
-        transform: scale(1);
-        box-shadow: 0 0 0 0 rgba(242, 199, 68, 0.7);
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Autoconcreteira Fiori | Produza Concreto com Economia e Eficiência</title>
+    <meta name="description"
+      content="Elimine atrasos, desperdícios e custos altos na obra. Conheça a Fiori: a central de concreto sobre rodas.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      html {
+        scroll-behavior: smooth;
       }
 
-      70% {
-        transform: scale(1.05);
-        box-shadow: 0 0 0 20px rgba(242, 199, 68, 0);
+      .pulsante {
+        animation: pulse 1.8s infinite;
       }
 
-      100% {
-        transform: scale(1);
-        box-shadow: 0 0 0 0 rgba(242, 199, 68, 0);
+      @keyframes pulse {
+        0% {
+          transform: scale(1);
+          box-shadow: 0 0 0 0 rgba(242, 199, 68, 0.7);
+        }
+
+        70% {
+          transform: scale(1.05);
+          box-shadow: 0 0 0 20px rgba(242, 199, 68, 0);
+        }
+
+        100% {
+          transform: scale(1);
+          box-shadow: 0 0 0 0 rgba(242, 199, 68, 0);
+        }
       }
-    }
-  </style>
-</head>
+    </style>
+  </head>
 
-<script>
-  const menuButton = document.getElementById('menu-button');
-  const mobileMenu = document.getElementById('mobile-menu');
+  <script>
+    const menuButton = document.getElementById('menu-button');
+    const mobileMenu = document.getElementById('mobile-menu');
 
-  menuButton.addEventListener('click', () => {
-    mobileMenu.classList.toggle('hidden');
-  });
-</script>
-
-
-<body class="bg-[#F2F2F2] text-gray-800">
-
-<!-- NAVBAR -->
-<header class="bg-white shadow fixed top-0 left-0 w-full z-50">
-  <div class="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
-    <img src="assets/logo-fiori.png" alt="Logo Fiori" class="h-10">
-
-    <!-- Botão hambúrguer para mobile -->
-    <button id="menu-button" class="md:hidden text-[#002E5D] focus:outline-none text-2xl">
-      ☰
-    </button>
-
-    <!-- Links no desktop -->
-    <nav class="hidden md:flex space-x-6 text-[#002E5D] font-semibold text-sm">
-      <a href="#hero" class="hover:text-[#F2C744] transition">Início</a>
-      <a href="#problema" class="hover:text-[#F2C744] transition">Problema</a>
-      <a href="#diferenciais" class="hover:text-[#F2C744] transition">Diferenciais</a>
-      <a href="#vantagens" class="hover:text-[#F2C744] transition">Vantagens</a>
-      <a href="#funcionamento" class="hover:text-[#F2C744] transition">Como Funciona</a>
-      <a href="#formulario" class="hover:text-[#F2C744] transition">Orçamento</a>
-    </nav>
-  </div>
-
-  <!-- Menu mobile -->
-  <div id="mobile-menu" class="md:hidden hidden px-6 pb-4 bg-white">
-    <nav class="flex flex-col space-y-2 text-[#002E5D] font-semibold text-sm">
-      <a href="#hero" class="hover:text-[#F2C744] transition">Início</a>
-      <a href="#problema" class="hover:text-[#F2C744] transition">Problema</a>
-      <a href="#diferenciais" class="hover:text-[#F2C744] transition">Diferenciais</a>
-      <a href="#vantagens" class="hover:text-[#F2C744] transition">Vantagens</a>
-      <a href="#funcionamento" class="hover:text-[#F2C744] transition">Como Funciona</a>
-      <a href="#formulario" class="hover:text-[#F2C744] transition">Orçamento</a>
-    </nav>
-  </div>
-</header>
+    menuButton.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
 
 
-  <div class="h-20"></div>
+  <body class="bg-[#F2F2F2] text-gray-800">
 
-  <!-- HERO -->
-  <section id="hero" class="bg-[#002E5D] text-white py-20 px-6">
-    <div class="max-w-7xl mx-auto grid md:grid-cols-2 items-center gap-8">
-      <div>
-        <h1 class="text-4xl md:text-5xl font-extrabold leading-tight mb-4">
-          Sua obra no ritmo certo com a Autoconcreteira Fiori.
-        </h1>
-        <p class="text-lg mb-6 text-white/90">
-          Concreto na hora, no local e na medida certa. Dê adeus a atrasos, desperdícios e estresse na sua obra.
-        </p>
-        <a href="#formulario"
-          class="inline-block px-8 py-4 rounded-full font-bold text-black bg-yellow-400 hover:bg-yellow-500 pulsante">
-          Economize agora mesmo!
-        </a>
+    <!-- NAVBAR -->
+    <header class="bg-white shadow fixed top-0 left-0 w-full z-50">
+      <div class="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
+        <img src="assets/logo-fiori.png" alt="Logo Fiori" class="h-10">
+
+        <!-- Botão hambúrguer para mobile -->
+        <button id="menu-button" class="md:hidden text-[#002E5D] focus:outline-none text-2xl">
+          ☰
+        </button>
+
+        <!-- Links no desktop -->
+        <nav class="hidden md:flex space-x-6 text-[#002E5D] font-semibold text-sm">
+          <a href="#hero" class="hover:text-[#F2C744] transition">Início</a>
+          <a href="#problema" class="hover:text-[#F2C744] transition">Problema</a>
+          <a href="#diferenciais" class="hover:text-[#F2C744] transition">Diferenciais</a>
+          <a href="#vantagens" class="hover:text-[#F2C744] transition">Vantagens</a>
+          <a href="#funcionamento" class="hover:text-[#F2C744] transition">Como Funciona</a>
+          <a href="#formulario" class="hover:text-[#F2C744] transition">Orçamento</a>
+        </nav>
       </div>
-      <div class="flex justify-center">
-        <img src="assets/auto-fiori.png" alt="Autoconcreteira Fiori" class="max-w-full h-auto drop-shadow-lg" />
-      </div>
-    </div>
-  </section>
 
-  <!-- PROBLEMA -->
-  <section id="problema" class="bg-[#001B3A] text-white py-16 px-6">
-    <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-10 items-center">
-      <div>
-        <h2 class="text-4xl font-bold text-[#F2C744] mb-4">Cansado de atrasos e dor de cabeça com concreto?</h2>
-        <p class="text-lg text-white/90">
-          Concretagem fora do prazo, caminhões que não chegam, desperdício de material e retrabalho afetam diretamente
-          seu lucro.
-          Com a Fiori, você assume o controle total da produção — com mobilidade e precisão.
-        </p>
+      <!-- Menu mobile -->
+      <div id="mobile-menu" class="md:hidden hidden px-6 pb-4 bg-white">
+        <nav class="flex flex-col space-y-2 text-[#002E5D] font-semibold text-sm">
+          <a href="#hero" class="hover:text-[#F2C744] transition">Início</a>
+          <a href="#problema" class="hover:text-[#F2C744] transition">Problema</a>
+          <a href="#diferenciais" class="hover:text-[#F2C744] transition">Diferenciais</a>
+          <a href="#vantagens" class="hover:text-[#F2C744] transition">Vantagens</a>
+          <a href="#funcionamento" class="hover:text-[#F2C744] transition">Como Funciona</a>
+          <a href="#formulario" class="hover:text-[#F2C744] transition">Orçamento</a>
+        </nav>
       </div>
-      <div class="flex justify-center">
-        <img src="assets/atraso.jpg" alt="Problemas na obra" class="w-full max-w-md rounded shadow-lg">
-      </div>
-    </div>
-  </section>
+    </header>
 
-  <!-- DIFERENCIAIS -->
-  <section id="diferenciais" class="bg-white py-16 px-6">
-    <div class="max-w-6xl mx-auto">
-      <h2 class="text-3xl font-bold text-[#002E5D] text-center mb-10">O que só a Fiori oferece</h2>
-      <div class="grid md:grid-cols-2 gap-10">
-        <ul class="space-y-5 text-lg text-gray-700">
-          <li>✅ <strong>Mobilidade Total:</strong> Produza concreto onde for necessário.</li>
-          <li>✅ <strong>Autonomia Completa:</strong> Um operador realiza toda a operação.</li>
-          <li>✅ <strong>Precisão Digital:</strong> Sistema de pesagem embarcada.</li>
-          <li>✅ <strong>Economia Real:</strong> Redução de até 30% nos custos.</li>
-          <li>✅ <strong>Agilidade:</strong> Concreto pronto em minutos no canteiro.</li>
-        </ul>
+
+    <div class="h-20"></div>
+
+    <!-- HERO -->
+    <section id="hero" class="bg-[#002E5D] text-white py-20 px-6">
+      <div class="max-w-7xl mx-auto grid md:grid-cols-2 items-center gap-8">
+        <div>
+          <h1 class="text-4xl md:text-5xl font-extrabold leading-tight mb-4">
+            Sua obra no ritmo certo com a Autoconcreteira Fiori.
+          </h1>
+          <p class="text-lg mb-6 text-white/90">
+            Concreto na hora, no local e na medida certa. Dê adeus a atrasos, desperdícios e estresse na sua obra.
+          </p>
+          <a href="#formulario"
+            class="inline-block px-8 py-4 rounded-full font-bold text-black bg-yellow-400 hover:bg-yellow-500 pulsante">
+            Economize agora mesmo!
+          </a>
+        </div>
         <div class="flex justify-center">
-          <img src="assets/auto-fiori.png" alt="Fiori em operação" class="max-w-full h-auto drop-shadow">
+          <img src="assets/auto-fiori.png" alt="Autoconcreteira Fiori" class="max-w-full h-auto drop-shadow-lg" />
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- BENEFÍCIOS -->
-  <section id="vantagens" class="bg-[#F2C744] py-20 px-6">
-    <div class="max-w-6xl mx-auto grid md:grid-cols-2 items-center gap-10">
-      <div>
-        <h2 class="text-4xl font-extrabold text-[#002E5D] mb-4">Economize até <span
-            class="text-white text-6xl">30%</span></h2>
-        <p class="text-lg text-[#002E5D]">
-          Evite desperdício de material, retrabalho, transporte e tempo parado. Com a Fiori, sua obra é mais lucrativa.
+    <!-- PROBLEMA -->
+    <section id="problema" class="bg-[#001B3A] text-white py-16 px-6">
+      <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-10 items-center">
+        <div>
+          <h2 class="text-4xl font-bold text-[#F2C744] mb-4">Cansado de atrasos e dor de cabeça com concreto?</h2>
+          <p class="text-lg text-white/90">
+            Concretagem fora do prazo, caminhões que não chegam, desperdício de material e retrabalho afetam diretamente
+            seu lucro.
+            Com a Fiori, você assume o controle total da produção — com mobilidade e precisão.
+          </p>
+        </div>
+        <div class="flex justify-center">
+          <img src="assets/atraso.jpg" alt="Problemas na obra" class="w-full max-w-md rounded shadow-lg">
+        </div>
+      </div>
+    </section>
+
+    <!-- DIFERENCIAIS -->
+    <section id="diferenciais" class="bg-white py-16 px-6">
+      <div class="max-w-6xl mx-auto">
+        <h2 class="text-3xl font-bold text-[#002E5D] text-center mb-10">O que só a Fiori oferece</h2>
+        <div class="grid md:grid-cols-2 gap-10">
+          <ul class="space-y-5 text-lg text-gray-700">
+            <li>✅ <strong>Mobilidade Total:</strong> Produza concreto onde for necessário.</li>
+            <li>✅ <strong>Autonomia Completa:</strong> Um operador realiza toda a operação.</li>
+            <li>✅ <strong>Precisão Digital:</strong> Sistema de pesagem embarcada.</li>
+            <li>✅ <strong>Economia Real:</strong> Redução de até 30% nos custos.</li>
+            <li>✅ <strong>Agilidade:</strong> Concreto pronto em minutos no canteiro.</li>
+          </ul>
+          <div class="flex justify-center">
+            <img src="assets/auto-fiori.png" alt="Fiori em operação" class="max-w-full h-auto drop-shadow">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BENEFÍCIOS -->
+    <section id="vantagens" class="bg-[#F2C744] py-20 px-6">
+      <div class="max-w-6xl mx-auto grid md:grid-cols-2 items-center gap-10">
+        <div>
+          <h2 class="text-4xl font-extrabold text-[#002E5D] mb-4">Economize até <span
+              class="text-white text-6xl">30%</span></h2>
+          <p class="text-lg text-[#002E5D]">
+            Evite desperdício de material, retrabalho, transporte e tempo parado. Com a Fiori, sua obra é mais
+            lucrativa.
+          </p>
+        </div>
+        <div class="flex justify-center">
+          <img src="assets/economia.png" alt="Economia 30%" class="w-full max-w-sm">
+        </div>
+      </div>
+    </section>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
+
+    <!-- Seção dos Tamanhos -->
+    <section id="tamanhos" class="bg-[#F2F2F2] py-20 px-6">
+      <div class="max-w-7xl mx-auto" x-data="carousel()">
+        <h2 class="text-3xl md:text-4xl font-extrabold text-[#002E5D] text-center mb-6">
+          Tamanhos sob medida para sua demanda
+        </h2>
+        <p class="text-lg text-gray-700 text-center max-w-3xl mx-auto mb-12">
+          Seja uma pequena obra ou um grande projeto, a Fiori tem o equipamento certo para sua necessidade.
+        </p>
+
+        <!-- Carrossel -->
+        <div class="relative">
+          <!-- Slides -->
+          <div class="overflow-hidden relative">
+            <div class="flex transition-all duration-500 ease-in-out"
+              :style="`transform: translateX(-${active * 100}%);`">
+              <!-- Slide 1 -->
+              <div class="min-w-full px-8">
+                <div class="bg-white rounded-lg shadow p-6 text-center">
+                  <img src="assets/modelo-mini.png" alt="Modelo Mini" class="mx-auto mb-4 h-40 object-contain">
+                  <h3 class="text-xl font-bold text-[#002E5D] mb-1">Modelo Mini</h3>
+                  <p class="text-sm text-gray-600 mb-1">Capacidade: 1 m³</p>
+                  <p class="text-sm text-gray-600">Ideal para obras pequenas e manutenções urbanas.</p>
+                </div>
+              </div>
+
+              <!-- Slide 2 -->
+              <div class="min-w-full px-8">
+                <div class="bg-white rounded-lg shadow p-6 text-center">
+                  <img src="assets/modelo-medio.png" alt="Modelo Médio" class="mx-auto mb-4 h-40 object-contain">
+                  <h3 class="text-xl font-bold text-[#002E5D] mb-1">Modelo Médio</h3>
+                  <p class="text-sm text-gray-600 mb-1">Capacidade: 2,5 m³</p>
+                  <p class="text-sm text-gray-600">Perfeita para obras em loteamentos e infraestrutura urbana.</p>
+                </div>
+              </div>
+
+              <!-- Slide 3 -->
+              <div class="min-w-full px-8">
+                <div class="bg-white rounded-lg shadow p-6 text-center">
+                  <img src="assets/modelo-maxi.png" alt="Modelo Maxi" class="mx-auto mb-4 h-40 object-contain">
+                  <h3 class="text-xl font-bold text-[#002E5D] mb-1">Modelo Maxi</h3>
+                  <p class="text-sm text-gray-600 mb-1">Capacidade: 4 m³</p>
+                  <p class="text-sm text-gray-600">Alta produtividade para grandes obras e logística de concreto.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Botões Laterais -->
+          <button @click="prev"
+            class="absolute top-1/2 left-0 transform -translate-y-1/2 bg-[#002E5D] text-white px-3 py-2 rounded-full hover:bg-[#001B3A] z-10">
+            ←
+          </button>
+          <button @click="next"
+            class="absolute top-1/2 right-0 transform -translate-y-1/2 bg-[#002E5D] text-white px-3 py-2 rounded-full hover:bg-[#001B3A] z-10">
+            →
+          </button>
+        </div>
+
+        <!-- CTA -->
+        <div class="text-center mt-12">
+          <a href="#formulario"
+            class="inline-block bg-yellow-400 text-black px-8 py-3 rounded-full font-semibold hover:bg-yellow-500 transition pulsante">
+            Fale com um especialista
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Alpine Script Controller -->
+    <script>
+      function carousel() {
+        return {
+          active: 0,
+          total: 3,
+          next() {
+            this.active = (this.active + 1) % this.total;
+          },
+          prev() {
+            this.active = (this.active - 1 + this.total) % this.total;
+          },
+        };
+      }
+    </script>
+
+
+
+
+    <!-- ESPECIALISTAS -->
+    <section class="bg-[#002E5D] text-white py-20 px-6">
+      <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-10 items-center">
+        <div>
+          <h2 class="text-3xl md:text-4xl font-extrabold mb-4">Especialistas em Concreto com Mobilidade</h2>
+          <p class="text-lg text-white/90">
+            Nossa missão é revolucionar a construção civil com tecnologia inteligente. Entregamos resultado,
+            produtividade
+            e economia de verdade.
+          </p>
+          <ul class="mt-4 space-y-3 text-white/90 text-base">
+            <li>✔️ Obra sem atrasos</li>
+            <li>✔️ Controle total de dosagem</li>
+            <li>✔️ Qualidade garantida no concreto</li>
+          </ul>
+        </div>
+        <div class="flex justify-center">
+          <img src="assets/certified.png" alt="Garantia" class="max-w-sm">
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-[#F2F2F2] py-20 px-6">
+      <div class="max-w-7xl mx-auto">
+        <h2 class="text-3xl font-bold text-center text-[#002E5D] mb-12">
+          Vantagens da Autoconcreteira Fiori
+        </h2>
+
+        <div class="grid md:grid-cols-3 gap-8">
+          <!-- Economia Operacional -->
+          <div class="bg-white p-6 rounded shadow">
+            <h3 class="font-bold text-[#002E5D] mb-2">Economia Operacional:</h3>
+            <p>
+              Com produção sob demanda no canteiro, elimine o desperdício de concreto e reduza o custo logístico com
+              caminhões betoneira.
+              Obtenha economia direta no transporte, armazenamento e pessoal.
+            </p>
+          </div>
+
+          <!-- Agilidade na Obra -->
+          <div class="bg-white p-6 rounded shadow">
+            <h3 class="font-bold text-[#002E5D] mb-2">Agilidade na Obra:</h3>
+            <p>
+              Produza o concreto em minutos e no local exato de aplicação. Ganhe velocidade em obras com alto ritmo e
+              reduza os gargalos
+              no cronograma.
+            </p>
+          </div>
+
+          <!-- Produção Autônoma -->
+          <div class="bg-white p-6 rounded shadow">
+            <h3 class="font-bold text-[#002E5D] mb-2">Produção Autônoma:</h3>
+            <p>
+              Operação 100% independente: carregue, pese, misture e descarregue com apenas um operador. Dispensa usina
+              externa e equipe grande.
+            </p>
+          </div>
+
+          <!-- Qualidade e Controle -->
+          <div class="bg-white p-6 rounded shadow">
+            <h3 class="font-bold text-[#002E5D] mb-2">Qualidade e Controle:</h3>
+            <p>
+              A Autoconcreteira garante dosagem precisa e mistura homogênea com sistema de pesagem embarcado. O concreto
+              produzido
+              atende com rigor os padrões técnicos.
+            </p>
+          </div>
+
+          <!-- Mobilidade Total -->
+          <div class="bg-white p-6 rounded shadow">
+            <h3 class="font-bold text-[#002E5D] mb-2">Mobilidade Total:</h3>
+            <p>
+              Leve a central de concreto até os locais mais remotos ou de difícil acesso. Ideal para obras agrícolas,
+              estradas, barragens e loteamentos.
+            </p>
+          </div>
+
+          <!-- Redução de Retrabalho -->
+          <div class="bg-white p-6 rounded shadow">
+            <h3 class="font-bold text-[#002E5D] mb-2">Redução de Retrabalho:</h3>
+            <p>
+              A produção imediata no local evita perdas por atrasos ou concretagens fora de especificação. A eficiência
+              reduz retrabalhos e refações.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- COMO FUNCIONA UMA AUTOCONCRETEIRA -->
+    <section id="funcionamento" class="bg-white py-20 px-6">
+      <div class="max-w-7xl mx-auto text-center">
+        <h2 class="text-4xl font-extrabold text-[#002E5D] mb-6">Como Funciona uma Autoconcreteira Fiori</h2>
+        <p class="text-lg text-gray-700 max-w-3xl mx-auto mb-12">
+          A Fiori é uma central de concreto sobre rodas. Ela realiza todo o ciclo produtivo de forma autônoma: do
+          carregamento à aplicação. Confira as etapas abaixo:
+        </p>
+
+        <!-- ETAPAS -->
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6 mb-16">
+          <div class="flex flex-col items-center">
+            <img src="assets/icone-carregar.png" alt="Carregue" class="w-12 h-12 mb-3" />
+            <h3 class="font-bold text-[#002E5D]">Carregue</h3>
+            <p class="text-sm text-gray-600">Com agilidade</p>
+          </div>
+          <div class="flex flex-col items-center">
+            <img src="assets/icone-pesar.png" alt="Pese" class="w-12 h-12 mb-3" />
+            <h3 class="font-bold text-[#002E5D]">Pese</h3>
+            <p class="text-sm text-gray-600">Controle dos insumos</p>
+          </div>
+          <div class="flex flex-col items-center">
+            <img src="assets/icone-dose.png" alt="Dose" class="w-12 h-12 mb-3" />
+            <h3 class="font-bold text-[#002E5D]">Dose</h3>
+            <p class="text-sm text-gray-600">Dosagem precisa</p>
+          </div>
+          <div class="flex flex-col items-center">
+            <img src="assets/icone-misturar.png" alt="Misture" class="w-12 h-12 mb-3" />
+            <h3 class="font-bold text-[#002E5D]">Misture</h3>
+            <p class="text-sm text-gray-600">Concreto homogêneo</p>
+          </div>
+          <div class="flex flex-col items-center">
+            <img src="assets/icone-transporte.png" alt="Transporte" class="w-12 h-12 mb-3" />
+            <h3 class="font-bold text-[#002E5D]">Transporte</h3>
+            <p class="text-sm text-gray-600">Aplicação no local</p>
+          </div>
+          <div class="flex flex-col items-center">
+            <img src="assets/icone-descarregar.png" alt="Descarregue" class="w-12 h-12 mb-3" />
+            <h3 class="font-bold text-[#002E5D]">Descarregue</h3>
+            <p class="text-sm text-gray-600">Com eficiência</p>
+          </div>
+        </div>
+
+        <div class="max-w-6xl mx-auto rounded-lg overflow-hidden shadow-lg">
+          <div class="relative w-full" style="padding-top: 56.25%;">
+            <iframe class="absolute top-0 left-0 w-full h-full rounded-lg"
+              src="https://www.youtube.com/embed/eOaKUBH8g6I?si=b7nTbt1_1YkvhDFq" title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+            </iframe>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+
+
+    <!-- FORMULÁRIO -->
+    <section id="formulario" class="bg-white py-20 px-6">
+      <div class="max-w-xl mx-auto bg-[#F2F2F2] p-8 rounded-lg shadow-md">
+        <h2 class="text-3xl font-bold text-center text-[#002E5D] mb-6">Solicite um Orçamento</h2>
+        <form action="https://formsubmit.co/SEU-EMAIL" method="POST" class="space-y-4">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_next" value="https://seudominio.com.br/obrigado.html">
+          <input type="text" name="nome" placeholder="Seu nome" required class="w-full border p-3 rounded" />
+          <input type="email" name="email" placeholder="Seu e-mail" required class="w-full border p-3 rounded" />
+          <input type="tel" name="telefone" placeholder="Telefone/WhatsApp" required
+            class="w-full border p-3 rounded" />
+          <select name="tipo_obra" required class="w-full border p-3 rounded">
+            <option value="">Tipo de Obra</option>
+            <option value="infra">Infraestrutura</option>
+            <option value="urbana">Urbana</option>
+            <option value="agrícola">Agrícola</option>
+            <option value="outra">Outra</option>
+          </select>
+          <textarea name="mensagem" rows="4" placeholder="Descreva sua necessidade"
+            class="w-full border p-3 rounded"></textarea>
+          <button type="submit"
+            class="w-full bg-[#002E5D] text-white py-3 rounded hover:bg-[#001B3A] transition">Enviar</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-[#002E5D] text-white py-10 px-6">
+      <div class="max-w-6xl mx-auto text-center">
+        <h2 class="text-xl font-bold mb-2">Fale com a Fiori do Brasil</h2>
+
+        <p class="mb-2">
+          <strong>Telefone:</strong> (51) 3337-4888 | (51) 99231-1567 | 0800-645-4005
+        </p>
+
+        <p class="mb-4">
+          <strong>Email:</strong> <a href="mailto:contato@fioridobrasil.com.br" class="underline hover:text-yellow-300">
+            contato@fioridobrasil.com.br
+          </a>
+        </p>
+
+        <p class="text-sm text-white/70 mt-6">
+          &copy; 2025 Fiori do Brasil. Todos os direitos reservados.
         </p>
       </div>
-      <div class="flex justify-center">
-        <img src="assets/economia.png" alt="Economia 30%" class="w-full max-w-sm">
-      </div>
+    </footer>
+
+  </body>
+
+  </html>
+
+  <!-- NAVBAR -->
+  <header class="bg-white shadow fixed top-0 left-0 w-full z-50">
+    <div class="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
+      <img src="assets/logo-fiori.png" alt="Logo Fiori" class="h-10">
+
+      <!-- Botão hambúrguer para mobile -->
+      <button id="menu-button" class="md:hidden text-[#002E5D] focus:outline-none text-2xl">
+        ☰
+      </button>
+
+      <!-- Links no desktop -->
+      <nav class="hidden md:flex space-x-6 text-[#002E5D] font-semibold text-sm">
+        <a href="#hero" class="hover:text-[#F2C744] transition">Início</a>
+        <a href="#problema" class="hover:text-[#F2C744] transition">Problema</a>
+        <a href="#diferenciais" class="hover:text-[#F2C744] transition">Diferenciais</a>
+        <a href="#vantagens" class="hover:text-[#F2C744] transition">Vantagens</a>
+        <a href="#funcionamento" class="hover:text-[#F2C744] transition">Como Funciona</a>
+        <a href="#formulario" class="hover:text-[#F2C744] transition">Orçamento</a>
+      </nav>
     </div>
-  </section>
 
-
-  <!-- ESPECIALISTAS -->
-  <section class="bg-[#002E5D] text-white py-20 px-6">
-    <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-10 items-center">
-      <div>
-        <h2 class="text-3xl md:text-4xl font-extrabold mb-4">Especialistas em Concreto com Mobilidade</h2>
-        <p class="text-lg text-white/90">
-          Nossa missão é revolucionar a construção civil com tecnologia inteligente. Entregamos resultado, produtividade
-          e economia de verdade.
-        </p>
-        <ul class="mt-4 space-y-3 text-white/90 text-base">
-          <li>✔️ Obra sem atrasos</li>
-          <li>✔️ Controle total de dosagem</li>
-          <li>✔️ Qualidade garantida no concreto</li>
-        </ul>
-      </div>
-      <div class="flex justify-center">
-        <img src="assets/certified.png" alt="Garantia" class="max-w-sm">
-      </div>
+    <!-- Menu mobile -->
+    <div id="mobile-menu" class="md:hidden hidden px-6 pb-4 bg-white">
+      <nav class="flex flex-col space-y-2 text-[#002E5D] font-semibold text-sm">
+        <a href="#hero" class="hover:text-[#F2C744] transition">Início</a>
+        <a href="#problema" class="hover:text-[#F2C744] transition">Problema</a>
+        <a href="#diferenciais" class="hover:text-[#F2C744] transition">Diferenciais</a>
+        <a href="#vantagens" class="hover:text-[#F2C744] transition">Vantagens</a>
+        <a href="#funcionamento" class="hover:text-[#F2C744] transition">Como Funciona</a>
+        <a href="#formulario" class="hover:text-[#F2C744] transition">Orçamento</a>
+      </nav>
     </div>
-  </section>
-
-  <section class="bg-[#F2F2F2] py-20 px-6">
-    <div class="max-w-7xl mx-auto">
-      <h2 class="text-3xl font-bold text-center text-[#002E5D] mb-12">
-        Vantagens da Autoconcreteira Fiori
-      </h2>
-
-      <div class="grid md:grid-cols-3 gap-8">
-        <!-- Economia Operacional -->
-        <div class="bg-white p-6 rounded shadow">
-          <h3 class="font-bold text-[#002E5D] mb-2">Economia Operacional:</h3>
-          <p>
-            Com produção sob demanda no canteiro, elimine o desperdício de concreto e reduza o custo logístico com
-            caminhões betoneira.
-            Obtenha economia direta no transporte, armazenamento e pessoal.
-          </p>
-        </div>
-
-        <!-- Agilidade na Obra -->
-        <div class="bg-white p-6 rounded shadow">
-          <h3 class="font-bold text-[#002E5D] mb-2">Agilidade na Obra:</h3>
-          <p>
-            Produza o concreto em minutos e no local exato de aplicação. Ganhe velocidade em obras com alto ritmo e
-            reduza os gargalos
-            no cronograma.
-          </p>
-        </div>
-
-        <!-- Produção Autônoma -->
-        <div class="bg-white p-6 rounded shadow">
-          <h3 class="font-bold text-[#002E5D] mb-2">Produção Autônoma:</h3>
-          <p>
-            Operação 100% independente: carregue, pese, misture e descarregue com apenas um operador. Dispensa usina
-            externa e equipe grande.
-          </p>
-        </div>
-
-        <!-- Qualidade e Controle -->
-        <div class="bg-white p-6 rounded shadow">
-          <h3 class="font-bold text-[#002E5D] mb-2">Qualidade e Controle:</h3>
-          <p>
-            A Autoconcreteira garante dosagem precisa e mistura homogênea com sistema de pesagem embarcado. O concreto
-            produzido
-            atende com rigor os padrões técnicos.
-          </p>
-        </div>
-
-        <!-- Mobilidade Total -->
-        <div class="bg-white p-6 rounded shadow">
-          <h3 class="font-bold text-[#002E5D] mb-2">Mobilidade Total:</h3>
-          <p>
-            Leve a central de concreto até os locais mais remotos ou de difícil acesso. Ideal para obras agrícolas,
-            estradas, barragens e loteamentos.
-          </p>
-        </div>
-
-        <!-- Redução de Retrabalho -->
-        <div class="bg-white p-6 rounded shadow">
-          <h3 class="font-bold text-[#002E5D] mb-2">Redução de Retrabalho:</h3>
-          <p>
-            A produção imediata no local evita perdas por atrasos ou concretagens fora de especificação. A eficiência
-            reduz retrabalhos e refações.
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-
-  <!-- COMO FUNCIONA UMA AUTOCONCRETEIRA -->
-  <section id="funcionamento" class="bg-white py-20 px-6">
-    <div class="max-w-7xl mx-auto text-center">
-      <h2 class="text-4xl font-extrabold text-[#002E5D] mb-6">Como Funciona uma Autoconcreteira Fiori</h2>
-      <p class="text-lg text-gray-700 max-w-3xl mx-auto mb-12">
-        A Fiori é uma central de concreto sobre rodas. Ela realiza todo o ciclo produtivo de forma autônoma: do
-        carregamento à aplicação. Confira as etapas abaixo:
-      </p>
-
-      <!-- ETAPAS -->
-      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6 mb-16">
-        <div class="flex flex-col items-center">
-          <img src="assets/icone-carregar.png" alt="Carregue" class="w-12 h-12 mb-3" />
-          <h3 class="font-bold text-[#002E5D]">Carregue</h3>
-          <p class="text-sm text-gray-600">Com agilidade</p>
-        </div>
-        <div class="flex flex-col items-center">
-          <img src="assets/icone-pesar.png" alt="Pese" class="w-12 h-12 mb-3" />
-          <h3 class="font-bold text-[#002E5D]">Pese</h3>
-          <p class="text-sm text-gray-600">Controle dos insumos</p>
-        </div>
-        <div class="flex flex-col items-center">
-          <img src="assets/icone-dose.png" alt="Dose" class="w-12 h-12 mb-3" />
-          <h3 class="font-bold text-[#002E5D]">Dose</h3>
-          <p class="text-sm text-gray-600">Dosagem precisa</p>
-        </div>
-        <div class="flex flex-col items-center">
-          <img src="assets/icone-misturar.png" alt="Misture" class="w-12 h-12 mb-3" />
-          <h3 class="font-bold text-[#002E5D]">Misture</h3>
-          <p class="text-sm text-gray-600">Concreto homogêneo</p>
-        </div>
-        <div class="flex flex-col items-center">
-          <img src="assets/icone-transporte.png" alt="Transporte" class="w-12 h-12 mb-3" />
-          <h3 class="font-bold text-[#002E5D]">Transporte</h3>
-          <p class="text-sm text-gray-600">Aplicação no local</p>
-        </div>
-        <div class="flex flex-col items-center">
-          <img src="assets/icone-descarregar.png" alt="Descarregue" class="w-12 h-12 mb-3" />
-          <h3 class="font-bold text-[#002E5D]">Descarregue</h3>
-          <p class="text-sm text-gray-600">Com eficiência</p>
-        </div>
-      </div>
-
-      <div class="max-w-6xl mx-auto rounded-lg overflow-hidden shadow-lg">
-        <div class="relative w-full" style="padding-top: 56.25%;">
-          <iframe class="absolute top-0 left-0 w-full h-full rounded-lg"
-            src="https://www.youtube.com/embed/eOaKUBH8g6I?si=b7nTbt1_1YkvhDFq" title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
-          </iframe>
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-
-
-
-  <!-- FORMULÁRIO -->
-  <section id="formulario" class="bg-white py-20 px-6">
-    <div class="max-w-xl mx-auto bg-[#F2F2F2] p-8 rounded-lg shadow-md">
-      <h2 class="text-3xl font-bold text-center text-[#002E5D] mb-6">Solicite um Orçamento</h2>
-      <form action="https://formsubmit.co/SEU-EMAIL" method="POST" class="space-y-4">
-        <input type="hidden" name="_captcha" value="false">
-        <input type="hidden" name="_next" value="https://seudominio.com.br/obrigado.html">
-        <input type="text" name="nome" placeholder="Seu nome" required class="w-full border p-3 rounded" />
-        <input type="email" name="email" placeholder="Seu e-mail" required class="w-full border p-3 rounded" />
-        <input type="tel" name="telefone" placeholder="Telefone/WhatsApp" required class="w-full border p-3 rounded" />
-        <select name="tipo_obra" required class="w-full border p-3 rounded">
-          <option value="">Tipo de Obra</option>
-          <option value="infra">Infraestrutura</option>
-          <option value="urbana">Urbana</option>
-          <option value="agrícola">Agrícola</option>
-          <option value="outra">Outra</option>
-        </select>
-        <textarea name="mensagem" rows="4" placeholder="Descreva sua necessidade"
-          class="w-full border p-3 rounded"></textarea>
-        <button type="submit"
-          class="w-full bg-[#002E5D] text-white py-3 rounded hover:bg-[#001B3A] transition">Enviar</button>
-      </form>
-    </div>
-  </section>
-
-  <!-- FOOTER -->
-  <footer class="bg-[#002E5D] text-white py-10 px-6">
-    <div class="max-w-6xl mx-auto text-center">
-      <h2 class="text-xl font-bold mb-2">Fale com a Fiori do Brasil</h2>
-
-      <p class="mb-2">
-        <strong>Telefone:</strong> (51) 3337-4888 | (51) 99231-1567 | 0800-645-4005
-      </p>
-
-      <p class="mb-4">
-        <strong>Email:</strong> <a href="mailto:contato@fioridobrasil.com.br" class="underline hover:text-yellow-300">
-          contato@fioridobrasil.com.br
-        </a>
-      </p>
-
-      <p class="text-sm text-white/70 mt-6">
-        &copy; 2025 Fiori do Brasil. Todos os direitos reservados.
-      </p>
-    </div>
-  </footer>
-
-</body>
-
-</html>
-
-<!-- NAVBAR -->
-<header class="bg-white shadow fixed top-0 left-0 w-full z-50">
-  <div class="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
-    <img src="assets/logo-fiori.png" alt="Logo Fiori" class="h-10">
-
-    <!-- Botão hambúrguer para mobile -->
-    <button id="menu-button" class="md:hidden text-[#002E5D] focus:outline-none text-2xl">
-      ☰
-    </button>
-
-    <!-- Links no desktop -->
-    <nav class="hidden md:flex space-x-6 text-[#002E5D] font-semibold text-sm">
-      <a href="#hero" class="hover:text-[#F2C744] transition">Início</a>
-      <a href="#problema" class="hover:text-[#F2C744] transition">Problema</a>
-      <a href="#diferenciais" class="hover:text-[#F2C744] transition">Diferenciais</a>
-      <a href="#vantagens" class="hover:text-[#F2C744] transition">Vantagens</a>
-      <a href="#funcionamento" class="hover:text-[#F2C744] transition">Como Funciona</a>
-      <a href="#formulario" class="hover:text-[#F2C744] transition">Orçamento</a>
-    </nav>
-  </div>
-
-  <!-- Menu mobile -->
-  <div id="mobile-menu" class="md:hidden hidden px-6 pb-4 bg-white">
-    <nav class="flex flex-col space-y-2 text-[#002E5D] font-semibold text-sm">
-      <a href="#hero" class="hover:text-[#F2C744] transition">Início</a>
-      <a href="#problema" class="hover:text-[#F2C744] transition">Problema</a>
-      <a href="#diferenciais" class="hover:text-[#F2C744] transition">Diferenciais</a>
-      <a href="#vantagens" class="hover:text-[#F2C744] transition">Vantagens</a>
-      <a href="#funcionamento" class="hover:text-[#F2C744] transition">Como Funciona</a>
-      <a href="#formulario" class="hover:text-[#F2C744] transition">Orçamento</a>
-    </nav>
-  </div>
-</header>
+  </header>
 
 
   <div class="h-20"></div>
